@@ -1,11 +1,12 @@
 const express = require('express');
 const router = express.Router();
 const controller = require('../controllers');
+const middleware = require("../utils/middleware")
 
 
 // auth (regis dan login)
 
-router.post('/register', controller.user.register);
+router.post('/register', middleware.isLogin, controller.user.register);
 
 router.post('/login', controller.user.login);
 

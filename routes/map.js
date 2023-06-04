@@ -1,17 +1,18 @@
 var express = require('express');
 var router = express.Router();
 const controller = require("../controllers/index")
+const middleware = require("../utils/middleware")
 
 // get
 router.get('/', controller.map.getData);
 // get by id
 router.get('/:id', controller.map.getDataById);
 // create
-router.post('/', controller.map.create);
+router.post('/', middleware.isLogin, controller.map.create);
 // update
-router.put('/:id', controller.map.update);
+router.put('/:id', middleware.isLogin, controller.map.update);
 // delete
-router.delete('/:id', controller.map.delete);
+router.delete('/:id', middleware.isLogin, controller.map.delete);
 // get geojson
 router.get('/geojson/:id', controller.map.getGeoJSON);
 
