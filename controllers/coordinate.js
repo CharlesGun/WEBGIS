@@ -130,7 +130,7 @@ module.exports = {
                     data: null
                 })
             }
-            const updated = await coordinates.update({
+            const updated = await coordinate.update({
                 lat: lat,
                 lng: lng,
                 mapId: mapId
@@ -167,7 +167,7 @@ module.exports = {
                     data: null
                 })
             }
-            const deleted = await coordinates.destroy({
+            const deleted = await coordinate.destroy({
                 where: {
                     id: id
                 }

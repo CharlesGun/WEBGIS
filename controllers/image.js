@@ -1,6 +1,7 @@
 const {
     images
 } = require('../models');
+const imagekit = require('../utils/imagekit');
 
 
 module.exports = {
@@ -20,11 +21,7 @@ module.exports = {
             const image = await images.create({
                 image: uploadedFile.url,
                 mapId: mapId,
-                name: name
-            },{
-                where:{
-                    id: image.id
-                }
+                nama: name
             });
 
             return res.status(200).json({
@@ -121,7 +118,6 @@ module.exports = {
             id
         } = req.params
         const {
-            mapId,
             name
         } = req.body;
         const file = req.file.buffer.toString("base64");
@@ -143,10 +139,9 @@ module.exports = {
                     data: null
                 })
             }
-            const updated = await images.update({
+            const updated = await image.update({
                 image: uploadedFile.url,
-                mapId: mapId,
-                name: name
+                nama: name
             }, {
                 where: {
                     id: id

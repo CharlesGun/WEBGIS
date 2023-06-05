@@ -109,10 +109,10 @@ module.exports = {
         }
     },
     forgotPass: async (req, res, next) => {
+        const {
+            email
+        } = req.body;
         try {
-            const {
-                email
-            } = req.body;
             const user = await users.findOne({
                 where: {
                     email: email
@@ -123,7 +123,7 @@ module.exports = {
                 const payload = {
                     id: user.id
                 };
-                const token = jwt.sign(payload, SIGNATURE_KEY);
+                const token = await jwt.sign(payload, SIGNATURE_KEY);
                 const link = `${BASE_URL}/user/reset-pass?token=${token}`;
 
                 htmlEmail = await util.getHtml('reset-password.ejs', {
@@ -136,9 +136,6 @@ module.exports = {
             return res.status(200).json({
                 status: true,
                 message: 'Check your email for reset password',
-                data: {
-                    token: token
-                }
             });
         } catch (err) {
             next(err)
@@ -181,11 +178,43 @@ module.exports = {
             });
 
             return res.status(200).json({
-                status: false,
+                status: true,
                 message: 'Update success!!'
             });
         } catch (err) {
             next(err);
+        }
+    },
+    delete: async (req, res, next) => {
+        const {
+            id
+        } = req.params
+        try {
+            const user = await users.findOne({
+                where: {
+                    id: id
+                }
+            })
+            if (!user) {
+                return res.status(409).json({
+                    status: false,
+                    message: 'data not found',
+                    data: null
+                })
+            }
+            const deleted = await users.destroy({
+                where: {
+                    id: id
+                }
+            })
+
+            return res.status(200).json({
+                status: true,
+                message: 'delete user success',
+                data: deleted
+            })
+        } catch (err) {
+            next(err)
         }
     }
 }

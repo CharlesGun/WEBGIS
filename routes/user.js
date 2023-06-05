@@ -14,5 +14,7 @@ router.post('/forgot-pass', controller.user.forgotPass);
 
 router.post('/reset-pass', controller.user.resetPassword);
 
+router.delete('/:id', controller.user.delete);
+
 
 module.exports = router;

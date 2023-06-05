@@ -116,13 +116,13 @@ module.exports = {
                 }
             })
             Object.keys(image).forEach(key => {
-                imgResult = image[key]
+                let imgResult = image[key]
+                let i = 0;
+                while (imgResult[i]) {
+                    imgValue[i] = [imgResult[i].nama, imgResult[i].image]
+                    i++
+                }
             });
-            imgResult.forEach(element => {
-                imgValue = [element.name, element.url]
-            })
-            
-
             let coorValue = [];
             let coorResult = [];
             
@@ -317,7 +317,7 @@ module.exports = {
                     data: null
                 })
             }
-            const updated = await maps.update({
+            const updated = await map.update({
                 name: name,
                 category: category,
                 desc: description,
