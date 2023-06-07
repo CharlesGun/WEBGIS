@@ -175,16 +175,11 @@ module.exports = {
                     data: null
                 })
             }
-            const deleted = await images.destroy({
-                where: {
-                    id: id
-                }
-            })
+            await image.destroy()
 
             return res.status(200).json({
                 status: true,
-                message: 'delete coordinate success',
-                data: image
+                message: 'delete image success',
             })
         } catch (err) {
             next(err)

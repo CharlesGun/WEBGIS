@@ -202,16 +202,11 @@ module.exports = {
                     data: null
                 })
             }
-            const deleted = await users.destroy({
-                where: {
-                    id: id
-                }
-            })
+            await user.destroy()
 
             return res.status(200).json({
                 status: true,
-                message: 'delete user success',
-                data: deleted
+                message: 'delete user success'
             })
         } catch (err) {
             next(err)

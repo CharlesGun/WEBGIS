@@ -167,16 +167,11 @@ module.exports = {
                     data: null
                 })
             }
-            const deleted = await coordinate.destroy({
-                where: {
-                    id: id
-                }
-            })
+            await coordinate.destroy()
 
             return res.status(200).json({
                 status: true,
                 message: 'delete coordinate success',
-                data: deleted
             })
         } catch (err) {
             next(err)

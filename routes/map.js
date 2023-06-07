@@ -13,7 +13,5 @@ router.post('/', middleware.isLogin, controller.map.create);
 router.put('/:id', middleware.isLogin, controller.map.update);
 // delete
 router.delete('/:id', middleware.isLogin, controller.map.delete);
-// get geojson
-router.get('/geojson/:id', controller.map.getGeoJSON);
 
 module.exports = router;
