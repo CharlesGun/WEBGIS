@@ -160,100 +160,121 @@ module.exports = {
       createdAt: new Date(),
       updatedAt: new Date()
     },
-    // {
-    //   lat: ,
-    //   lng: ,
-    //   mapId: 9, BENTUK POLYGON JANGAN LUPA
-    //   createdAt: new Date(),
-    //   updatedAt: new Date()
-    // },
     {
       lat: -4.593368,
       lng: 104.875195,
-      mapId: 10,
+      mapId: 9,
       createdAt: new Date(),
       updatedAt: new Date()
     },
     {
       lat: -4.591195,
       lng: 104.873974,
-      mapId: 11,
+      mapId: 10,
       createdAt: new Date(),
       updatedAt: new Date()
     },
     {
       lat: -4.5916682586542965,
       lng: 104.87387155386557,
-      mapId: 12,
+      mapId: 11,
       createdAt: new Date(),
       updatedAt: new Date()
     },
     {
       lat: -4.593442114642538,
       lng: 104.87379997054991,
-      mapId: 13,
+      mapId: 12,
       createdAt: new Date(),
       updatedAt: new Date()
     },
     {
       lat: -4.5930038385881,
       lng: 104.8740901453161,
-      mapId: 14,
+      mapId: 13,
       createdAt: new Date(),
       updatedAt: new Date()
     },
     {
       lat: -4.591990620531944,
       lng: 104.87455366641129,
-      mapId: 15,
+      mapId: 14,
       createdAt: new Date(),
       updatedAt: new Date()
     },
     {
       lat: -4.592420963314999,
       lng: 104.87456464256461,
-      mapId: 16,
+      mapId: 15,
       createdAt: new Date(),
       updatedAt: new Date()
     },
     {
       lat: -4.594503381093948,
       lng: 104.87194865921903,
-      mapId: 17,
+      mapId: 16,
       createdAt: new Date(),
       updatedAt: new Date()
     },
     {
       lat: -4.590846618277433,
       lng: 104.87257979493575,
-      mapId: 18,
+      mapId: 17,
       createdAt: new Date(),
       updatedAt: new Date()
     },
     {
       lat: -4.5901043012888545,
       lng: 104.8727549671523,
-      mapId: 19,
+      mapId: 18,
       createdAt: new Date(),
       updatedAt: new Date()
     },
     {
       lat: -4.590365216791212,
       lng: 104.87232368469289,
-      mapId: 20,
+      mapId: 19,
       createdAt: new Date(),
       updatedAt: new Date()
     },
     {
       lat: -4.590872147129439,
       lng: 104.8710431334721,
-      mapId: 21,
+      mapId: 20,
       createdAt: new Date(),
       updatedAt: new Date()
     },
     {
       lat: -4.590303218092043,
       lng: 104.87197610650439,
+      mapId: 21,
+      createdAt: new Date(),
+      updatedAt: new Date()
+    },
+    {
+      lat: -4.593507760044691,
+      lng: 104.87186816738904,
+      mapId: 22,
+      createdAt: new Date(),
+      updatedAt: new Date()
+    },
+    {
+      lat: -4.592160,
+      lng: 104.869104,
+      mapId: 22,
+      createdAt: new Date(),
+      updatedAt: new Date()
+    },
+    {
+      lat: -4.59319526935757,
+      lng: 104.87170170259326,
+      mapId: 22,
+      createdAt: new Date(),
+      updatedAt: new Date()
+    },
+    {
+      lat: -4.591783891469641,
+      lng: 104.87090410211857,
       mapId: 22,
       createdAt: new Date(),
       updatedAt: new Date()
@@ -261,83 +282,97 @@ module.exports = {
     {
       lat: -4.593507760044691,
       lng: 104.87186816738904,
-      mapId: 23,
-      createdAt: new Date(),
-      updatedAt: new Date()
-    },
-    {
-      lat: -4.592160,
-      lng: 104.869104,
-      mapId: 23,
-      createdAt: new Date(),
-      updatedAt: new Date()
-    },
-    {
-      lat: -4.59319526935757,
-      lng: 104.87170170259326,
-      mapId: 23,
-      createdAt: new Date(),
-      updatedAt: new Date()
-    },
-    {
-      lat: -4.591783891469641,
-      lng: 104.87090410211857,
-      mapId: 23,
-      createdAt: new Date(),
-      updatedAt: new Date()
-    },
-    {
-      lat: -4.593507760044691,
-      lng: 104.87186816738904,
-      mapId: 23,
+      mapId: 22,
       createdAt: new Date(),
       updatedAt: new Date()
     },
     {
       lat: -4.589354477930334,
       lng: 104.87307537319575,
-      mapId: 24,
+      mapId: 23,
       createdAt: new Date(),
       updatedAt: new Date()
     },
     {
       lat: -4.58854500332904,
       lng: 104.87302034947172,
-      mapId: 25,
+      mapId: 24,
       createdAt: new Date(),
       updatedAt: new Date()
     },
     {
       lat: -4.588801670053586,
       lng: 104.8728567347365,
-      mapId: 26,
+      mapId: 25,
       createdAt: new Date(),
       updatedAt: new Date()
     },
     {
       lat: 4.588165231708514,
       lng: 104.87348542310131,
-      mapId: 27,
+      mapId: 26,
       createdAt: new Date(),
       updatedAt: new Date()
     },
     {
       lat: -4.588964700923753,
       lng: 104.87357672159165,
-      mapId: 28,
+      mapId: 27,
       createdAt: new Date(),
       updatedAt: new Date()
     },
     {
       lat: -4.588996115847869,
       lng: 104.8738214731423,
-      mapId: 29,
+      mapId: 28,
       createdAt: new Date(),
       updatedAt: new Date()
     },
     {
       lat: -4.588631,
       lng: 104.873917,
+      mapId: 29,
+      createdAt: new Date(),
+      updatedAt: new Date()
+    },
+    {
+      lat: -4.588675366162257,
+      lng: 104.8743536500561,
+      mapId: 30,
+      createdAt: new Date(),
+      updatedAt: new Date()
+    },
+    {
+      lat: -4.589032272762762,
+      lng: 104.87492483196736,
+      mapId: 30,
+      createdAt: new Date(),
+      updatedAt: new Date()
+    },
+    {
+      lat: -4.588448758704236,
+      lng: 104.8747543299043,
+      mapId: 30,
+      createdAt: new Date(),
+      updatedAt: new Date()
+    },
+    {
+      lat: -4.588394939422389,
+      lng: 104.87559263171437,
+      mapId: 30,
+      createdAt: new Date(),
+      updatedAt: new Date()
+    },
+    {
+      lat: -4.588907638732068,
+      lng: 104.8756380989312,
+      mapId: 30,
+      createdAt: new Date(),
+      updatedAt: new Date()
+    },
+    {
+      lat: -4.589236219311511,
+      lng: 104.8759506860468,
       mapId: 30,
       createdAt: new Date(),
       updatedAt: new Date()
@@ -345,91 +380,49 @@ module.exports = {
     {
       lat: -4.588675366162257,
       lng: 104.8743536500561,
-      mapId: 31,
-      createdAt: new Date(),
-      updatedAt: new Date()
-    },
-    {
-      lat: -4.589032272762762,
-      lng: 104.87492483196736,
-      mapId: 31,
-      createdAt: new Date(),
-      updatedAt: new Date()
-    },
-    {
-      lat: -4.588448758704236,
-      lng: 104.8747543299043,
-      mapId: 31,
-      createdAt: new Date(),
-      updatedAt: new Date()
-    },
-    {
-      lat: -4.588394939422389,
-      lng: 104.87559263171437,
-      mapId: 31,
-      createdAt: new Date(),
-      updatedAt: new Date()
-    },
-    {
-      lat: -4.588907638732068,
-      lng: 104.8756380989312,
-      mapId: 31,
-      createdAt: new Date(),
-      updatedAt: new Date()
-    },
-    {
-      lat: -4.589236219311511,
-      lng: 104.8759506860468,
-      mapId: 31,
-      createdAt: new Date(),
-      updatedAt: new Date()
-    },
-    {
-      lat: -4.588675366162257,
-      lng: 104.8743536500561,
-      mapId: 31,
+      mapId: 30,
       createdAt: new Date(),
       updatedAt: new Date()
     },
     {
       lat: -4.588089019197086,
       lng: 104.87660143571232,
-      mapId: 32,
+      mapId: 31,
       createdAt: new Date(),
       updatedAt: new Date()
     },
     {
       lat: -4.5881031821724525,
       lng: 104.8756494658602,
-      mapId: 33,
+      mapId: 32,
       createdAt: new Date(),
       updatedAt: new Date()
     },
     {
       lat: -4.587290226928853,
       lng: 104.87606719587576,
-      mapId: 34,
+      mapId: 33,
       createdAt: new Date(),
       updatedAt: new Date()
     },
     {
       lat: -4.587111773215485,
       lng: 104.87661848587969,
-      mapId: 35,
+      mapId: 34,
       createdAt: new Date(),
       updatedAt: new Date()
     },
     {
       lat: -4.589564799739687,
       lng: 104.87487083964741,
-      mapId: 36,
+      mapId: 35,
       createdAt: new Date(),
       updatedAt: new Date()
     },
     {
       lat: -4.587868,
       lng: 104.874369,
-      mapId: 37,
+      mapId: 36,
       createdAt: new Date(),
       updatedAt: new Date()
     }
