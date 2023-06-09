@@ -154,7 +154,9 @@ module.exports = {
             })
             let i = 0;
             while(image[i]){
-                await imagekit.deleteFile(image[i].imagekitFileId)
+                if(image[i].imagekitFileId){
+                    await imagekit.deleteFile(image[i].imagekitFileId)
+                }
                 await image[i].destroy();
                 i++
             }

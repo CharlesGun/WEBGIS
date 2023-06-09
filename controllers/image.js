@@ -119,15 +119,11 @@ module.exports = {
             id
         } = req.params
         const {
-            name
+            name,
+            mapId
         } = req.body;
         const file = req.file.buffer.toString("base64");
         try {
-            const uploadedFile = await imagekit.upload({
-                file,
-                fileName: req.file.originalname
-            });
-
             const image = await images.findOne({
                 where: {
                     id: id
@@ -140,10 +136,15 @@ module.exports = {
                     data: null
                 })
             }
-            await imagekit.deleteFile(image.imagekitFileId)
+            const uploadedFile = await imagekit.upload({
+                file,
+                fileName: req.file.originalname
+            });
+
             const updated = await image.update({
-                image: uploadedFile.url,
                 nama: name,
+                mapId: mapId,
+                image: uploadedFile.url,
                 imagekitFileId: uploadedFile.fileId
             }, {
                 where: {
@@ -178,7 +179,9 @@ module.exports = {
                     data: null
                 })
             }
-            await imagekit.deleteFile(image.imagekitFileId)
+            if(image.imagekitFileId){
+                await imagekit.deleteFile(image.imagekitFileId)
+            }
             await image.destroy()
             
 
