@@ -13,7 +13,7 @@ module.exports = {
         type: Sequelize.STRING
       },
       desc: {
-        type: Sequelize.STRING
+        type: Sequelize.TEXT
       },
       category: {
         type: Sequelize.STRING

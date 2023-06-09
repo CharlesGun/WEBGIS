@@ -142,7 +142,27 @@ module.exports = {
                     data: null
                 })
             }
-            await map.destroy()
+            const coordinate = await coordinates.findAll({
+                where: {
+                    mapId: map.id
+                }
+            })
+            const image = await images.findAll({
+                where: {
+                    mapId: map.id
+                }
+            })
+            let i = 0;
+            while(image[i]){
+                await image[i].destroy();
+                i++
+            }
+            i = 0;
+            while(coordinate[i]){
+                await coordinate[i].destroy();
+                i++
+            }
+            await map.destroy();
 
             return res.status(200).json({
                 status: true,

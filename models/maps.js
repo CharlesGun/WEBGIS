@@ -15,7 +15,7 @@ module.exports = (sequelize, DataTypes) => {
   }
   maps.init({
     name: DataTypes.STRING,
-    desc: DataTypes.STRING,
+    desc: DataTypes.TEXT,
     category: DataTypes.STRING,
     type: DataTypes.STRING
   }, {
