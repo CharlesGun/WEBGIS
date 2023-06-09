@@ -21,6 +21,7 @@ module.exports = {
             const image = await images.create({
                 image: uploadedFile.url,
                 mapId: mapId,
+                imagekitFileId: uploadedFile.fileId,
                 nama: name
             });
 
@@ -139,9 +140,11 @@ module.exports = {
                     data: null
                 })
             }
+            await imagekit.deleteFile(image.imagekitFileId)
             const updated = await image.update({
                 image: uploadedFile.url,
-                nama: name
+                nama: name,
+                imagekitFileId: uploadedFile.fileId
             }, {
                 where: {
                     id: id
@@ -175,7 +178,9 @@ module.exports = {
                     data: null
                 })
             }
+            await imagekit.deleteFile(image.imagekitFileId)
             await image.destroy()
+            
 
             return res.status(200).json({
                 status: true,

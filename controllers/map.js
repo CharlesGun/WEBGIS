@@ -3,6 +3,7 @@ const {
     maps,
     images
 } = require('../models');
+const imagekit = require('../utils/imagekit');
 
 module.exports = {
 
@@ -153,6 +154,7 @@ module.exports = {
             })
             let i = 0;
             while(image[i]){
+                await imagekit.deleteFile(image[i].imagekitFileId)
                 await image[i].destroy();
                 i++
             }

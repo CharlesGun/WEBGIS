@@ -16,6 +16,7 @@ module.exports = (sequelize, DataTypes) => {
   images.init({
     nama: DataTypes.STRING,
     image: DataTypes.STRING,
+    imagekitFileId: DataTypes.STRING,
     mapId: DataTypes.INTEGER
   }, {
     sequelize,

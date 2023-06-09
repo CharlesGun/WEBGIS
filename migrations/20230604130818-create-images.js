@@ -15,6 +15,9 @@ module.exports = {
       image: {
         type: Sequelize.STRING
       },
+      imagekitFileId: {
+        type: Sequelize.STRING
+      },
       mapId: {
         type: Sequelize.INTEGER
       },
