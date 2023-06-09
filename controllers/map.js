@@ -4,7 +4,6 @@ const {
     images
 } = require('../models');
 
-
 module.exports = {
 
     create: async (req, res, next) => {
