@@ -41,6 +41,14 @@ module.exports = {
                     mapId: map.id
                 }
             })
+            Object.keys(image).forEach(key => {
+                imgResult = image[key]
+                let i = 0;
+                while (imgResult[i]) {
+                    imgValue[i] = [imgResult[i].nama, imgResult[i].image]
+                    i++
+                }
+            });
             
             let coorValue = [];
             let coorResult = [];
@@ -60,7 +68,7 @@ module.exports = {
                     name: map.name,
                     category: map.category,
                     description: map.desc,
-                    image: image
+                    image: imgValue
                 }
             } else if (map.type == 'LineString') {
                 Object.keys(coordinate).forEach(key => {
@@ -79,7 +87,7 @@ module.exports = {
                     name: map.name,
                     category: map.category,
                     description: map.desc,
-                    image: image
+                    image: imgValue
                 };
             } else {
                 Object.keys(coordinate).forEach(key => {
@@ -98,7 +106,7 @@ module.exports = {
                     name: map.name,
                     category: map.category,
                     description: map.desc,
-                    image: image
+                    image: imgValue
                 }
             }
 
@@ -153,7 +161,7 @@ module.exports = {
                         mapId: map[i].id
                     }
                 })
-                // imgResult[i] = img[i].map(item => [item.nama, item.image])
+                imgResult[i] = img[i].map(item => [item.nama, item.image])
 
                 features[i] = {
                     type: "Feature",
@@ -165,7 +173,7 @@ module.exports = {
                         name: map[i].name,
                         category: map[i].category,
                         description: map[i].desc,
-                        images: img[i]
+                        images: imgResult[i]
 
                     }
                 }
