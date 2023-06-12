@@ -259,34 +259,6 @@ module.exports = {
       updatedAt: new Date()
     },
     {
-      lat: -4.592160,
-      lng: 104.869104,
-      mapId: 22,
-      createdAt: new Date(),
-      updatedAt: new Date()
-    },
-    {
-      lat: -4.59319526935757,
-      lng: 104.87170170259326,
-      mapId: 22,
-      createdAt: new Date(),
-      updatedAt: new Date()
-    },
-    {
-      lat: -4.591783891469641,
-      lng: 104.87090410211857,
-      mapId: 22,
-      createdAt: new Date(),
-      updatedAt: new Date()
-    },
-    {
-      lat: -4.593507760044691,
-      lng: 104.87186816738904,
-      mapId: 22,
-      createdAt: new Date(),
-      updatedAt: new Date()
-    },
-    {
       lat: -4.589354477930334,
       lng: 104.87307537319575,
       mapId: 23,
@@ -332,48 +304,6 @@ module.exports = {
       lat: -4.588631,
       lng: 104.873917,
       mapId: 29,
-      createdAt: new Date(),
-      updatedAt: new Date()
-    },
-    {
-      lat: -4.588675366162257,
-      lng: 104.8743536500561,
-      mapId: 30,
-      createdAt: new Date(),
-      updatedAt: new Date()
-    },
-    {
-      lat: -4.589032272762762,
-      lng: 104.87492483196736,
-      mapId: 30,
-      createdAt: new Date(),
-      updatedAt: new Date()
-    },
-    {
-      lat: -4.588448758704236,
-      lng: 104.8747543299043,
-      mapId: 30,
-      createdAt: new Date(),
-      updatedAt: new Date()
-    },
-    {
-      lat: -4.588394939422389,
-      lng: 104.87559263171437,
-      mapId: 30,
-      createdAt: new Date(),
-      updatedAt: new Date()
-    },
-    {
-      lat: -4.588907638732068,
-      lng: 104.8756380989312,
-      mapId: 30,
-      createdAt: new Date(),
-      updatedAt: new Date()
-    },
-    {
-      lat: -4.589236219311511,
-      lng: 104.8759506860468,
-      mapId: 30,
       createdAt: new Date(),
       updatedAt: new Date()
     },

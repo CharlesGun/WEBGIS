@@ -183,7 +183,7 @@ module.exports = {
         name: "30 MESS Karyawan", //22
         category: "Hunian",
         desc: "30 MESS Karyawan di di PTPN 7 Bunga Mayang adalah fasilitas akomodasi yang disediakan khusus untuk para karyawan di dalam kompleks perkebunan tersebut. Fasilitas ini bertujuan untuk memberikan tempat tinggal yang nyaman dan layanan dukungan bagi para karyawan yang bekerja di perkebunan. MESS Karyawan terdiri dari 30 unit akomodasi yang dirancang dengan baik dan dilengkapi dengan fasilitas yang memadai. Setiap unit MESS dilengkapi dengan tempat tidur, lemari, meja kerja, dan kamar mandi pribadi. Fasilitas ini menawarkan kenyamanan dan privasi kepada para karyawan selama mereka tinggal di perkebunan. Lokasi MESS Karyawandi mudah diakses oleh para karyawan. Terletak di area yang strategis di dalam kompleks PTPN 7 Bunga Mayang, MESS ini memberikan akses yang nyaman dan dekat dengan tempat kerja serta fasilitas lainnya di dalam perkebunan.",
-        type: "Polygon",
+        type: "Point",
         createdAt: new Date(),
         updatedAt: new Date()
       },
@@ -247,7 +247,7 @@ module.exports = {
         name: "Station PG", //30
         category: "unknown",
         desc: "unknown",
-        type: "Polygon",
+        type: "Point",
         createdAt: new Date(),
         updatedAt: new Date()
       },

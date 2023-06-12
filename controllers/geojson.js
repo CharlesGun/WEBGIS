@@ -34,18 +34,14 @@ module.exports = {
             })
 
             let image = await images.findAndCountAll({
+                attributes: {
+                    exclude: ["id", 'mapId', 'createdAt', 'updatedAt','imagekitFileId']
+                },
                 where: {
                     mapId: map.id
                 }
             })
-            Object.keys(image).forEach(key => {
-                imgResult = image[key]
-                let i = 0;
-                while (imgResult[i]) {
-                    imgValue[i] = [imgResult[i].nama, imgResult[i].image]
-                    i++
-                }
-            });
+            
             let coorValue = [];
             let coorResult = [];
 
@@ -64,7 +60,7 @@ module.exports = {
                     name: map.name,
                     category: map.category,
                     description: map.desc,
-                    image: imgValue
+                    image: image
                 }
             } else if (map.type == 'LineString') {
                 Object.keys(coordinate).forEach(key => {
@@ -83,7 +79,7 @@ module.exports = {
                     name: map.name,
                     category: map.category,
                     description: map.desc,
-                    image: imgValue
+                    image: image
                 };
             } else {
                 Object.keys(coordinate).forEach(key => {
@@ -102,7 +98,7 @@ module.exports = {
                     name: map.name,
                     category: map.category,
                     description: map.desc,
-                    image: imgValue
+                    image: image
                 }
             }
 
@@ -151,13 +147,13 @@ module.exports = {
 
                 img[i] = await images.findAll({
                     attributes: {
-                        exclude: ["id", 'mapId', 'createdAt', 'updatedAt']
+                        exclude: ["id", 'mapId', 'createdAt', 'updatedAt','imagekitFileId']
                     },
                     where: {
                         mapId: map[i].id
                     }
                 })
-                imgResult[i] = img[i].map(item => [item.nama, item.image])
+                // imgResult[i] = img[i].map(item => [item.nama, item.image])
 
                 features[i] = {
                     type: "Feature",
@@ -169,7 +165,7 @@ module.exports = {
                         name: map[i].name,
                         category: map[i].category,
                         description: map[i].desc,
-                        images: imgResult[i]
+                        images: img[i]
 
                     }
                 }
