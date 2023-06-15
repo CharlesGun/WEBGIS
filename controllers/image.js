@@ -61,8 +61,6 @@ module.exports = {
             id
         } = req.params;
         try {
-
-
             let image = await images.findOne({
                 where: {
                     id: id
@@ -90,8 +88,6 @@ module.exports = {
             mapId
         } = req.params;
         try {
-
-
             let image = await images.findAndCountAll({
                 where: {
                     mapId: mapId
@@ -140,7 +136,9 @@ module.exports = {
                 file,
                 fileName: req.file.originalname
             });
-
+            if (image.imagekitFileId) {
+                await imagekit.deleteFile(image.imagekitFileId)
+            }
             const updated = await image.update({
                 nama: name,
                 mapId: mapId,
@@ -151,7 +149,6 @@ module.exports = {
                     id: id
                 }
             })
-
             return res.status(200).json({
                 status: true,
                 message: 'update image success',
@@ -179,11 +176,11 @@ module.exports = {
                     data: null
                 })
             }
-            if(image.imagekitFileId){
+            if (image.imagekitFileId) {
                 await imagekit.deleteFile(image.imagekitFileId)
             }
             await image.destroy()
-            
+
 
             return res.status(200).json({
                 status: true,
