@@ -38,7 +38,7 @@ module.exports = {
       {
         name: "Wisma Serbaguna", //4
         category: "Gedung",
-        desc: "unknown",
+        desc: "Wisma serbaguna adalah sebuah bangunan atau kompleks bangunan yang dirancang untuk menyediakan berbagai fasilitas dan layanan untuk keperluan serbaguna. Wisma serbaguna dapat digunakan untuk berbagai jenis acara dan kegiatan, seperti pertemuan bisnis, konferensi, seminar, perayaan, acara sosial, atau acara keagamaan.",
         type: "Point",
         createdAt: new Date(),
         updatedAt: new Date()
@@ -46,7 +46,7 @@ module.exports = {
       {
         name: "Mess Karyawan (Perum T50 Rayon I)", //5
         category: "Hunian",
-        desc: "unknown",
+        desc: "Mess karyawan adalah fasilitas akomodasi yang disediakan oleh perusahaan atau organisasi untuk tempat tinggal sementara bagi karyawan mereka. Mess karyawan biasanya diperuntukkan bagi karyawan yang bekerja jauh dari rumah atau memiliki jadwal kerja yang panjang, sehingga mereka membutuhkan tempat tinggal yang nyaman dan praktis di dekat tempat kerja.",
         type: "Point",
         createdAt: new Date(),
         updatedAt: new Date()
@@ -54,15 +54,15 @@ module.exports = {
       {
         name: "Gudang Pupuk", //6
         category: "Gudang",
-        desc: "unknown",
+        desc: "Gudang pupuk adalah fasilitas penyimpanan yang dirancang khusus untuk menyimpan pupuk dalam jumlah besar. Gudang pupuk penting dalam rantai pasok pupuk, karena mereka bertindak sebagai tempat penyimpanan sementara sebelum pupuk didistribusikan ke pasar atau pelanggan.",
         type: "Point",
         createdAt: new Date(),
         updatedAt: new Date()
       },
       {
         name: "Bengkel", //7
-        category: "Gedung",
-        desc: "unknown",
+        category: "Pemeliharaan",
+        desc: "Bengkel adalah sebuah tempat di mana perbaikan, pemeliharaan, dan pengerjaan kendaraan atau peralatan dilakukan. Bengkel dapat berupa tempat yang mandiri atau bagian dari sebuah fasilitas yang lebih besar, seperti bengkel di dealer mobil atau perusahaan industri.",
         type: "Point",
         createdAt: new Date(),
         updatedAt: new Date()
@@ -70,7 +70,7 @@ module.exports = {
       {
         name: "Mushola", //8
         category: "Tempat Ibadah",
-        desc: "unknown",
+        desc: "Mushola adalah sebuah tempat ibadah yang biasa ditemukan di dalam lingkungan masyarakat Muslim. Mushola sering kali berukuran kecil dan sederhana, dibandingkan dengan masjid yang lebih besar dan memiliki fasilitas yang lebih lengkap. Namun, meskipun ukurannya kecil, mushola tetap memiliki peran penting dalam kehidupan komunitas Muslim.",
         type: "Point",
         createdAt: new Date(),
         updatedAt: new Date()
@@ -237,8 +237,8 @@ module.exports = {
       },
       {
         name: "Pintu Masuk Area dan Absensi Karyawan", //29
-        category: "unknown",
-        desc: "unknown",
+        category: "Pintu Masuk",
+        desc: "Pintu masuk area dan absensi karyawan di PTPN VII Distrik Bungamayang adalah fasilitas yang digunakan untuk mengatur dan memantau akses masuk serta kehadiran karyawan di area perkebunan tersebut. Fasilitas ini memiliki peran penting dalam menjaga keamanan, disiplin, dan pengelolaan sumber daya manusia di perusahaan. Pintu masuk area dan absensi karyawan di PTPN VII Distrik Bungamayang adalah bagian penting dalam pengelolaan sumber daya manusia dan menjaga keamanan di lingkungan kerja perkebunan. Dengan adanya sistem ini, perusahaan dapat mengatur dan mengawasi akses masuk serta kehadiran karyawan dengan lebih efisien dan teratur.",
         type: "Point",
         createdAt: new Date(),
         updatedAt: new Date()
@@ -278,23 +278,23 @@ module.exports = {
       {
         name: "Kantor TMA PG Bunga Mayang", //34
         category: "Kantor",
-        desc: "unknown",
+        desc: "Kantor TMA (Teknik Mesin Alat) di PG Bunga Mayang merupakan fasilitas yang berfungsi sebagai pusat administrasi dan pengelolaan peralatan dan mesin-mesin di pabrik gula tersebut. Kantor ini memiliki peran penting dalam menjaga kelancaran operasional perusahaan, pemeliharaan peralatan, serta pengawasan dan perencanaan perawatan mesin-mesin yang digunakan dalam proses produksi. Kantor TMA PG Bunga Mayang merupakan salah satu bagian penting dalam pengelolaan peralatan dan mesin-mesin di pabrik gula. Melalui kantor ini, perusahaan dapat melakukan pemeliharaan terencana, perbaikan cepat jika ada kerusakan, dan pemantauan kondisi peralatan secara rutin untuk menjaga produktivitas dan efisiensi operasional pabrik gula.",
         type: "Point",
         createdAt: new Date(),
         updatedAt: new Date()
       },
       {
         name: "Bagasse Storage Pabrik Gula Bunga Mayang atau Ampas Pembuangan", //35
-        category: "unknown",
-        desc: "unknown",
+        category: "Gudang",
+        desc: "Bagasse Storage Pabrik Gula Bungamayang merupakan area yang didedikasikan untuk menyimpan dan mengelola limbah padat yang dihasilkan selama proses pengolahan tebu menjadi gula, yaitu bagas atau ampas tebu. Tempat ini dirancang khusus untuk menampung bagas sebelum digunakan untuk berbagai keperluan. Lokasinya berada di dekat pabrik gula, memudahkan pengangkutan dan penggunaan bagas secara efisien. Bagasse storage dilengkapi dengan bangunan gudang atau tempat penyimpanan tertutup yang kuat dan luas. Fasilitas ini mampu menampung jumlah bagas yang dihasilkan oleh pabrik gula dalam skala besar. Bagas disimpan dalam tumpukan atau baling-baling yang terorganisir secara sistematis. Penyimpanan yang baik penting untuk menjaga kualitas bagas dan mencegah kelembaban yang berlebihan. Perlindungan terhadap faktor-faktor lingkungan juga diperhatikan dalam Bagasse Storage Pabrik Gula Bungamayang. Langkah-langkah perlindungan seperti penghalang kelembaban dan pemisahan antara bagas segar dan bagas kering diterapkan untuk memastikan kualitas yang optimal. Kebersihan juga dijaga agar bagas tetap terjaga dari kontaminasi atau pencemaran yang dapat mempengaruhi kualitas produk akhir.",
         type: "Point",
         createdAt: new Date(),
         updatedAt: new Date()
       },
       {
         name: "Lahan Pengumpulan Tebu", //36
-        category: "unknown",
-        desc: "unknown",
+        category: "Lahan",
+        desc: "Lahan pengumpulan tebu atau Caneyard PG Bungamayang merupakan area yang digunakan untuk menyimpan tebu sebelum diolah menjadi gula. Tempat ini dirancang khusus untuk mengatur dan mengelola tebu yang masuk ke pabrik gula. Caneyard dilengkapi dengan berbagai fasilitas yang mendukung operasionalnya. Terdapat area parkir truk pengangkut tebu serta alat penimbang untuk mengukur berat tebu yang masuk. Selain itu, terdapat juga alat pengangkat atau conveyor yang digunakan untuk memindahkan tebu dari truk ke area penyimpanan. Kebersihan dan keamanan menjadi prioritas di Caneyard PG Bungamayang. Area ini dijaga agar tetap bersih dan terhindar dari kotoran atau pencemaran yang dapat mempengaruhi kualitas tebu. Sistem pengamanan seperti pagar dan pengawasan dilakukan untuk menjaga keamanan dan mencegah akses yang tidak diizinkan.",
         type: "Point",
         createdAt: new Date(),
         updatedAt: new Date()
