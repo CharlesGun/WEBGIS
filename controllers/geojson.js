@@ -170,6 +170,7 @@ module.exports = {
                         coordinates: coorResult[i]
                     },
                     properties: {
+                        mapId: map[i].id,
                         name: map[i].name,
                         category: map[i].category,
                         description: map[i].desc,
