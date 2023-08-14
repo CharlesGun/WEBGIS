@@ -124,7 +124,7 @@ module.exports = {
                     id: user.id
                 };
                 const token = await jwt.sign(payload, SIGNATURE_KEY);
-                const link = `${BASE_URL}/user/reset-pass?token=${token}`;
+                const link = `${BASE_URL}/api/user/reset-pass?token=${token}`;
 
                 htmlEmail = await util.getHtml('reset-password.ejs', {
                     name: user.username,
